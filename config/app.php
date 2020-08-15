@@ -167,6 +167,7 @@ return [
          */
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+        Ixudra\Curl\CurlServiceProvider::class,
 
 
         /*
@@ -232,6 +233,7 @@ return [
 
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
          'PDF' => Barryvdh\DomPDF\Facade::class,
+         'Curl' => Ixudra\Curl\Facades\Curl::class,
 
     ],
 

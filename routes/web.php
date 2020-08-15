@@ -132,3 +132,11 @@ Route::group(['middleware' => 'user'], function () {
 |------------------------------------------------
 */
 Route::post('/uploadpost', 'userController@upload');
+
+/*
+|-----------------------------------------------
+|            curl
+|------------------------------------------------
+*/
+
+Route::get('get-curl', 'curlController@getCURL');
