@@ -9,17 +9,18 @@ class curlController extends Controller
 {
     public function getCURL()
     {
-        // $response = Curl::to('https://cornerbytes.com/api/public/api/getlocation')
-        //                     ->get();
+//         $response = Curl::to('https://cornerbytes.com/api/public/api/getlocation');
+//         $response = file_get_contents('https://cornerbytes.com/api/public/api/getlocation');
+// dd($response);
 
+//         dd($response);
+        $response = Curl::to('ws.qvic.in/api/signup')
 
-        // dd($response);
-        $response = Curl::to('http://localhost/01/api/public/api/usersignup')
-
-                ->withData(['name'=>'curl', 'email'=>'curl@gmail.com', 'password'=>Hash::make(1234),])
+                ->withData(['company_id'=>'1','name'=>'sonu2','email'=>'sonu2@gmail.com','password'=>'1234','device_token'=>'test','device_type'=>2,'image'=>'','mobile'=>'8699636718'])
 
                 ->post();
+                dd($response);
 
-    dd($response);
+ 
     }
 }
