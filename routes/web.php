@@ -140,3 +140,16 @@ Route::post('/uploadpost', 'userController@upload');
 */
 
 Route::get('get-curl', 'curlController@getCURL');
+
+/*
+|-----------------------------------------------
+|            excel read and find string
+|------------------------------------------------
+*/
+Route::get('file/excel','ExcelFindStrController@upload');
+Route::post('file/upload','ExcelFindStrController@uploadpost');
+/*
+|-----------------------------------------------
+|       ------ end ---  excel read and find string
+|------------------------------------------------
+*/
