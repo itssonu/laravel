@@ -59,7 +59,9 @@ class excelController extends Controller
                     // } else {
                     //     $admin_share_format = 0;
                     // }
-                    $sheet->setCellValue('A' . $i, $key + 1);
+                    
+                    //here only string print correctly so convert all int into string 
+                    $sheet->setCellValue('A' . $i, (string)$loop);
                     $sheet->setCellValue('B' . $i, $value->name);
                     $sheet->setCellValue('C' . $i, $value->sub_name);
                     $sheet->setCellValue('D' . $i, date('Y-m-d', strtotime($value->sub_date)));
